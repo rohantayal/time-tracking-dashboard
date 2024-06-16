@@ -4,35 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
   <link rel="stylesheet" href="./style/index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style/font.css">
-
   <title>Frontend Mentor | Time tracking dashboard</title>
 
 </head>
 
 <body>
 
-  <main>
+  <main class="dashboard">
 
     <h1>Time tracking dashboard</h1>
 
     <section class="profile">
 
-      <div>
-        <img src="./images/image-jeremy.png" alt="Jeremy">
+      <div class="profile_bio">
+        <img src="./images/image-jeremy.png" alt="Jeremy" id="jeremy">
 
-        <div>
+        <div class="bio">
           <p>Report for</p>
           <h2>Jeremy Robson</h2>
         </div>
 
       </div>
 
-      <div>
+      <div class="time_change">
         <button>Daily</button>
         <button>Weekly</button>
         <button>Monthly</button>
@@ -40,124 +37,148 @@
 
     </section>
 
-    <section>
+    <section class="sub-cards work">
 
-      <div>
+      <div class="card-top">
         <h3>Work</h3>
         <img src="./images/icon-ellipsis.svg" alt="ellipsis">
       </div>
 
-      <div>
-        <p>5hrs</p>                     <!-- daily -->
-        <p>Previous - 7hrs</p>          <!-- daily -->
-      </div>
-      <div>
-        <p>32hrs</p>                    <!-- weekly -->
-        <p>Previous - 36hrs</p>         <!-- weekly -->
-      </div>
-      <div>
-        <p>103hrs</p>                    <!-- monthly -->
-        <p>Previous - 128hrs</p>         <!-- monthly -->
-      </div>
+      <div class="card-bottom">
+        <div class="card-sub daily">
+          <p class="current_time">5hrs</p>                     <!-- daily -->
+          <p class="previous_time">Previous - 7hrs</p>          <!-- daily -->
+        </div>
+  
+        <div class="card-sub weekly hidden">
+          <p class="current_time">32hrs</p>                    <!-- weekly -->
+          <p class="previous_time">Previous - 36hrs</p>         <!-- weekly -->
+        </div>
+  
+        <div class="card-sub monthly hidden">
+          <p class="current_time">103hrs</p>                    <!-- monthly -->
+          <p class="previous_time">Previous - 128hrs</p>         <!-- monthly -->
+        </div>
+
+      </div> 
 
     </section>
 
-    <section>
+    <section class="sub-cards play">
 
-      <div>
+      <div class="card-top">
         <h3>Play</h3>
         <img src="./images/icon-ellipsis.svg" alt="ellipsis">
       </div>
-      <div>
-        <p>1hr</p>                    <!-- daily -->
-        <p>Previous - 2hrs</p>        <!-- daily -->
+
+      <div class="card-bottom">
+        <div class="card-sub">
+          <p class="current_time">1hr</p>                    <!-- daily -->
+          <p class="previous_time">Previous - 2hrs</p>        <!-- daily -->
+        </div>
+        <div class="card-sub hidden">
+          <p class="current_time">10hrs</p>                  <!-- weekly -->
+          <p class="previous_time">Previous - 8hrs</p>        <!-- weekly -->
+        </div>
+        <div class="card-sub hidden">
+          <p class="current_time">23hrs</p>                  <!-- monthly -->
+          <p class="previous_time">Previous - 29hrs</p>       <!-- monthly -->
+        </div>
       </div>
-      <div>
-        <p>10hrs</p>                  <!-- weekly -->
-        <p>Previous - 8hrs</p>        <!-- weekly -->
-      </div>
-      <div>
-        <p>23hrs</p>                  <!-- monthly -->
-        <p>Previous - 29hrs</p>       <!-- monthly -->
-      </div>
+  
     </section>
 
-    <section>
-      <div>
+    <section class="sub-cards study">
+      <div class="card-top">
         <h3>Study</h3>
         <img src="./images/icon-ellipsis.svg" alt="ellipsis">
       </div>
-      <div>
-        <p>0hrs</p>                       <!-- daily -->
-        <p>Previous - 1hr</p>             <!-- daily -->
-      </div>
-      <div>
-        <p>4hrs</p>                         <!-- weekly -->
-        <p>Previous - 7hrs</p>              <!-- weekly -->
-      </div>
-      <div>
-        <p>13hra</p>                        <!-- monthly -->
-        <p>Previous - 19hrs</p>             <!-- monthly -->
+
+      <div class="card-bottom">
+        <div class="card-sub">
+          <p class="current_time">0hrs</p>                       <!-- daily -->
+          <p class="previous_time">Previous - 1hr</p>             <!-- daily -->
+        </div>
+        <div class="card-sub hidden">
+          <p class="current_time">4hrs</p>                         <!-- weekly -->
+          <p class="previous_time">Previous - 7hrs</p>              <!-- weekly -->
+        </div>
+        <div class="card-sub hidden">
+          <p class="current_time">13hra</p>                        <!-- monthly -->
+          <p class="previous_time">Previous - 19hrs</p>             <!-- monthly -->
+        </div>
       </div>
 
     </section>
 
-    <section>
-      <div>
+    <section class="sub-cards exercise">
+      <div class="card-top">
         <h3>Exercise</h3>
         <img src="./images/icon-ellipsis.svg" alt="ellipsis">
       </div>
-      <div>
-        <p>1hr</p>                          <!-- daily -->
-        <p>Previous - 1hr</p>               <!-- daily -->
+
+      <div class="card-bottom">
+        <div class="card-sub">
+          <p class="current_time">1hr</p>                          <!-- daily -->
+          <p class="previous_time">Previous - 1hr</p>               <!-- daily -->
+        </div>
+        <div class="card-sub hidden">
+          <p class="current_time">4hrs</p>                         <!-- weekly -->
+          <p class="previous_time">Previous - 5hrs</p>              <!-- weekly -->
+        </div>
+        <div class="card-sub hidden">
+          <p class="current_time">11hrs</p>                        <!-- monthly -->
+          <p class="previous_time">Previous - 18hrs</p>             <!-- monthly -->
+        </div>
       </div>
-      <div>
-        <p>4hrs</p>                         <!-- weekly -->
-        <p>Previous - 5hrs</p>              <!-- weekly -->
-      </div>
-      <div>
-        <p>11hrs</p>                        <!-- monthly -->
-        <p>Previous - 18hrs</p>             <!-- monthly -->
-      </div>
+
     </section>
 
-    <section>
-      <div>
+    <section class="sub-cards social">
+      <div class="card-top">
         <h3>Social</h3>
         <img src="./images/icon-ellipsis.svg" alt="ellipsis">
       </div>
-      <div>
-        <p>1hr</p>                          <!-- daily -->
-        <p>Previous - 3hrs</p>              <!-- daily -->
+
+      <div class="card-bottom">
+        <div class="card-sub">
+          <p class="current_time">1hr</p>                          <!-- daily -->
+          <p class="previous_time">Previous - 3hrs</p>              <!-- daily -->
+        </div>
+        <div class="card-sub hidden">
+          <p class="current_time">5hrs</p>                         <!-- weekly -->
+          <p class="previous_time">Previous - 10hrs</p>             <!-- weekly -->
+        </div>
+        <div class="card-sub hidden">
+          <p class="current_time">21hrs</p>                          <!-- monthly -->
+          <p class="previous_time">Previous - 23hrs</p>               <!-- monthly -->
+        </div>
       </div>
-      <div>
-        <p>5hrs</p>                         <!-- weekly -->
-        <p>Previous - 10hrs</p>             <!-- weekly -->
-      </div>
-      <div>
-        <p>21hrs</p>                          <!-- monthly -->
-        <p>Previous - 23hrs</p>               <!-- monthly -->
-      </div>
+      
 
     </section>
 
-    <section>
-      <div>
+    <section class="sub-cards self-care">
+      <div class="card-top">
         <h3>Self Care</h3>
         <img src="./images/icon-ellipsis.svg" alt="ellipsis">
       </div>
-      <div>
-        <p>0hrs</p>                     <!-- daily -->
-        <p>Previous - 1hr</p>           <!-- daily -->
+
+      <div class="card-bottom">
+        <div class="card-sub">
+          <p class="current_time">0hrs</p>                     <!-- daily -->
+          <p class="previous_time">Previous - 1hr</p>           <!-- daily -->
+        </div>
+        <div class="card-sub hidden">
+          <p class="current_time">2hrs</p>                      <!-- weekly -->
+          <p class="previous_time">Previous - 2hrs</p>           <!-- weekly -->
+        </div>
+        <div class="card-sub hidden">
+          <p class="current_time">7hrs</p>                       <!-- monthly -->
+          <p class="previous_time">Previous - 11hrs</p>           <!-- monthly -->
+        </div>
       </div>
-      <div>
-        <p>2hrs</p>                      <!-- weekly -->
-        <p>Previous - 2hrs</p>           <!-- weekly -->
-      </div>
-      <div>
-        <p>7hrs</p>                       <!-- monthly -->
-        <p>Previous - 11hrs</p>           <!-- monthly -->
-      </div>
+      
 
     </section>
 

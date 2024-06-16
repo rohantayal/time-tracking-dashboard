@@ -1,0 +1,224 @@
+:root {
+    /* Primary */
+
+    --pri-blue: hsl(246, 80%, 60%);
+
+    --pri-light-red-work: hsl(15, 100%, 70%);
+    --pri-soft-blue-play: hsl(195, 74%, 62%);
+    --pri-light-red-study: hsl(348, 100%, 68%);
+    --pri-lime-green-exercise: hsl(145, 58%, 55%);
+    --pri-violet-social: hsl(264, 64%, 52%);
+    --pri-soft-orange-self-care: hsl(43, 84%, 65%);
+
+    /*Neutral */ 
+    --neu-very-dark-blue: hsl(226, 43%, 10%);
+    --neu-dark-blue: hsl(235, 46%, 20%);
+    --neu-desaturated-blue: hsl(235, 45%, 61%);
+    --neu-pale-blue: hsl(236, 100%, 87%);
+
+    font-size: 18px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: var(--neu-very-dark-blue);
+}
+
+main.dashboard{
+    display: grid;
+    grid-template-rows: 203px repeat(6,160px);
+    row-gap: 24px;
+    grid-template-columns: 327px;
+    justify-content: center;
+    margin: 81px 0;
+    position: relative;
+}
+
+main.dashboard h1{
+    display: none;
+}
+
+main section.profile{
+    grid-row: 1/2;
+    position: relative;
+}
+
+section.profile div.profile_bio{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+    background-color: var(--pri-blue);
+    height: 133px;
+    border-radius: 15px;
+    
+}
+
+img#jeremy{
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    align-self: center;
+}
+
+div.bio{
+    align-self: center;
+}
+
+div.bio p{
+    font-size: 15px;
+    color: var(--neu-pale-blue);
+    margin: 0;
+}
+
+div.bio h2{
+    font-size: 24px;
+    font-weight: 200;
+    color: white;
+    margin: 4px 0 0 0;
+}
+
+section.profile div.time_change{
+    background-color: var(--neu-dark-blue);
+    height: 70px;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.time_change::before{
+    content: "";
+    position: absolute;
+    height: 30px;
+    bottom: 58px;
+    width: 100%;
+    background-color: var(--neu-dark-blue);
+    z-index: -1;
+}
+
+div.time_change button{
+    border: none;
+    font-size: 18px;
+    height: 21px;
+    width: 109px;
+    background-color: var(--neu-dark-blue);
+    color: var(--neu-pale-blue);
+}
+
+div.time_change button:hover{
+    color: white;
+}
+
+section.sub-cards{
+    height: 122px;
+    background-color: var(--neu-dark-blue);
+    align-self: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 6px;
+    position: relative;
+    border-radius: 15px;
+}
+
+section.sub-cards div.card-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 279px;
+    margin: 0 auto;
+    height: 22px;
+}
+
+div.card-top img{
+    height: 5px;
+    width: 21px;
+}
+
+div.card-top h3{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+section.sub-cards div.card-bottom{
+    width: 279px;
+    margin: 0 auto;
+    height: 38px;
+}
+
+div.card-sub{
+    width: 279px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.card-sub p.current_time{
+    font-size: 32px;
+    font-weight: 200;
+    color: white;
+    margin: 0;
+    display: inline-block;
+
+}
+div.card-sub p.previous_time{
+    color: var(--neu-pale-blue);
+    margin: 0;
+    display: inline-block;
+    align-self: center;
+}
+
+div.card-bottom div.hidden{
+    display: none;
+}
+
+section.sub-cards::before{
+    content: "";
+    height: 140px;
+    position: absolute;
+    border-radius: 15px 15px 0 0;
+    width: 100%;
+    z-index: -1;
+    bottom: 20px;
+    background-repeat: no-repeat;
+}
+
+section.work::before{
+    background-color: var(--pri-light-red-work);
+    background-image: url(../images/icon-work.svg);
+    background-position: right 20px top -8px;
+}
+
+section.play::before{
+    background-color: var(--pri-soft-blue-play);
+    background-image: url(../images/icon-play.svg);
+    background-position: right 20px top -4px;
+}
+
+section.study::before{
+    background-color: var(--pri-light-red-study);
+    background-image: url(../images/icon-study.svg);
+    background-position: right 20px top -4px;
+}
+
+section.exercise::before{
+    background-color: var(--pri-lime-green-exercise);
+    background-image: url(../images/icon-exercise.svg);
+    background-position: right 20px top;
+
+}
+
+section.social::before{
+    background-color: var(--pri-violet-social);
+    background-image: url(../images/icon-social.svg);
+    background-position: right 20px top -14px;
+}
+
+section.self-care::before{
+    background-color: var(--pri-soft-orange-self-care);
+    background-image: url(../images/icon-self-care.svg);
+    background-position: right 20px top -8px;
+}
