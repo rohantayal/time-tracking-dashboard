@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "rubik";
+    src: url(./Rubik-VariableFont_wght.ttf) format("truetype");
+}
+
+*{
+    font-size: 18px;
+    font-family: "rubik";
+    font-weight: normal;
+}
