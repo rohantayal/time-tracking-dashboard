@@ -25,6 +25,7 @@ body{
     box-sizing: border-box;
     min-height: 100vh;
     background-color: var(--neu-very-dark-blue);
+
 }
 
 main.dashboard{
@@ -238,8 +239,14 @@ section.self-care::before{
 
 @media screen and (min-width: 1120px) {
 
-    main.dashboard{
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    main.dashboard{
+        margin: 0;
         grid-template-columns: repeat(4,255px);
         grid-template-rows: repeat(2,244px);
         column-gap: 30px;
