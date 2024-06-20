@@ -8,7 +8,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style/font.css">
   <title>Frontend Mentor | Time tracking dashboard</title>
-
+  <script src="./js/main.js"></script>
 </head>
 
 <body>
@@ -30,9 +30,9 @@
       </div>
 
       <div class="time_change">
-        <button class="">Daily</button>
-        <button class="active">Weekly</button>
-        <button class="">Monthly</button>
+        <button class="btn">Daily</button>
+        <button class="btn active">Weekly</button>
+        <button class="btn">Monthly</button>
       </div>
 
     </section>
@@ -45,19 +45,19 @@
       </div>
 
       <div class="card-bottom">
-        <div class="card-sub daily">
+        <div class="card-sub Daily">
           <p class="current_time">5hrs</p>                     <!-- daily -->
-          <p class="previous_time">Previous - 7hrs</p>          <!-- daily -->
+          <p class="previous_time">Yesterday - 7hrs</p>          <!-- daily -->
         </div>
   
-        <div class="card-sub weekly hidden">
+        <div class="card-sub Weekly active">
           <p class="current_time">32hrs</p>                    <!-- weekly -->
-          <p class="previous_time">Previous - 36hrs</p>         <!-- weekly -->
+          <p class="previous_time">Last week - 36hrs</p>         <!-- weekly -->
         </div>
   
-        <div class="card-sub monthly hidden">
+        <div class="card-sub Monthly">
           <p class="current_time">103hrs</p>                    <!-- monthly -->
-          <p class="previous_time">Previous - 128hrs</p>         <!-- monthly -->
+          <p class="previous_time">Last month - 128hrs</p>         <!-- monthly -->
         </div>
 
       </div> 
@@ -72,17 +72,17 @@
       </div>
 
       <div class="card-bottom">
-        <div class="card-sub">
+        <div class="card-sub Daily">
           <p class="current_time">1hr</p>                    <!-- daily -->
-          <p class="previous_time">Previous - 2hrs</p>        <!-- daily -->
+          <p class="previous_time">Yesterday - 2hrs</p>        <!-- daily -->
         </div>
-        <div class="card-sub hidden">
+        <div class="card-sub Weekly active">
           <p class="current_time">10hrs</p>                  <!-- weekly -->
-          <p class="previous_time">Previous - 8hrs</p>        <!-- weekly -->
+          <p class="previous_time">Last week - 8hrs</p>        <!-- weekly -->
         </div>
-        <div class="card-sub hidden">
+        <div class="card-sub Monthly">
           <p class="current_time">23hrs</p>                  <!-- monthly -->
-          <p class="previous_time">Previous - 29hrs</p>       <!-- monthly -->
+          <p class="previous_time">Last month - 29hrs</p>       <!-- monthly -->
         </div>
       </div>
   
@@ -95,17 +95,17 @@
       </div>
 
       <div class="card-bottom">
-        <div class="card-sub">
+        <div class="card-sub Daily">
           <p class="current_time">0hrs</p>                       <!-- daily -->
-          <p class="previous_time">Previous - 1hr</p>             <!-- daily -->
+          <p class="previous_time">Yesterday - 1hr</p>             <!-- daily -->
         </div>
-        <div class="card-sub hidden">
+        <div class="card-sub Weekly active">
           <p class="current_time">4hrs</p>                         <!-- weekly -->
-          <p class="previous_time">Previous - 7hrs</p>              <!-- weekly -->
+          <p class="previous_time">Last week - 7hrs</p>              <!-- weekly -->
         </div>
-        <div class="card-sub hidden">
+        <div class="card-sub Monthly">
           <p class="current_time">13hra</p>                        <!-- monthly -->
-          <p class="previous_time">Previous - 19hrs</p>             <!-- monthly -->
+          <p class="previous_time">Last month - 19hrs</p>             <!-- monthly -->
         </div>
       </div>
 
@@ -118,17 +118,17 @@
       </div>
 
       <div class="card-bottom">
-        <div class="card-sub">
+        <div class="card-sub Daily">
           <p class="current_time">1hr</p>                          <!-- daily -->
-          <p class="previous_time">Previous - 1hr</p>               <!-- daily -->
+          <p class="previous_time">Yesterday - 1hr</p>               <!-- daily -->
         </div>
-        <div class="card-sub hidden">
+        <div class="card-sub Weekly active">
           <p class="current_time">4hrs</p>                         <!-- weekly -->
-          <p class="previous_time">Previous - 5hrs</p>              <!-- weekly -->
+          <p class="previous_time">Last week - 5hrs</p>              <!-- weekly -->
         </div>
-        <div class="card-sub hidden">
+        <div class="card-sub Monthly">
           <p class="current_time">11hrs</p>                        <!-- monthly -->
-          <p class="previous_time">Previous - 18hrs</p>             <!-- monthly -->
+          <p class="previous_time">Last month - 18hrs</p>             <!-- monthly -->
         </div>
       </div>
 
@@ -141,17 +141,17 @@
       </div>
 
       <div class="card-bottom">
-        <div class="card-sub">
+        <div class="card-sub Daily">
           <p class="current_time">1hr</p>                          <!-- daily -->
-          <p class="previous_time">Previous - 3hrs</p>              <!-- daily -->
+          <p class="previous_time">Yesterday - 3hrs</p>              <!-- daily -->
         </div>
-        <div class="card-sub hidden">
+        <div class="card-sub Weekly active">
           <p class="current_time">5hrs</p>                         <!-- weekly -->
-          <p class="previous_time">Previous - 10hrs</p>             <!-- weekly -->
+          <p class="previous_time">Last week - 10hrs</p>             <!-- weekly -->
         </div>
-        <div class="card-sub hidden">
+        <div class="card-sub Monthly">
           <p class="current_time">21hrs</p>                          <!-- monthly -->
-          <p class="previous_time">Previous - 23hrs</p>               <!-- monthly -->
+          <p class="previous_time">Last month - 23hrs</p>               <!-- monthly -->
         </div>
       </div>
       
@@ -165,17 +165,17 @@
       </div>
 
       <div class="card-bottom">
-        <div class="card-sub">
+        <div class="card-sub Daily">
           <p class="current_time">0hrs</p>                     <!-- daily -->
-          <p class="previous_time">Previous - 1hr</p>           <!-- daily -->
+          <p class="previous_time">Yesterday - 1hr</p>           <!-- daily -->
         </div>
-        <div class="card-sub hidden">
+        <div class="card-sub Weekly active">
           <p class="current_time">2hrs</p>                      <!-- weekly -->
-          <p class="previous_time">Previous - 2hrs</p>           <!-- weekly -->
+          <p class="previous_time">Last week - 2hrs</p>           <!-- weekly -->
         </div>
-        <div class="card-sub hidden">
+        <div class="card-sub Monthly">
           <p class="current_time">7hrs</p>                       <!-- monthly -->
-          <p class="previous_time">Previous - 11hrs</p>           <!-- monthly -->
+          <p class="previous_time">Last month - 11hrs</p>           <!-- monthly -->
         </div>
       </div>
       

@@ -164,7 +164,14 @@ section.sub-cards div.card-bottom{
 div.card-sub{
     display: flex;
     justify-content: space-between;
+    max-height: 0;
+    overflow: hidden;
 }
+
+div.card-bottom div.active{
+    max-height: fit-content;
+}
+
 
 div.card-sub p.current_time{
     font-size: 32px;
@@ -179,10 +186,6 @@ div.card-sub p.previous_time{
     margin: 0;
     display: inline-block;
     align-self: center;
-}
-
-div.card-bottom div.hidden{
-    display: none;
 }
 
 section.sub-cards::before{
